@@ -153,7 +153,7 @@ EOF;
             $y = ($this->items[$i]->y - 406 + (($this->items[$i]->page == 2) * 200)) * $this->factor;
             $x = ($this->items[$i]->x - (($this->items[$i]->x > 10000) * 9200)) * $this->factor;
             
-            $title = $this->items[$i]->string();
+            $title = $this->items[$i]->string(false);
             $content = $this->items[$i]->name;
             
             print <<<EOF
